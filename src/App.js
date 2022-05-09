@@ -20,7 +20,11 @@ class App extends Component {
     var prints = ""
     if(val == stuff.length && this.state.inputs.length > 0){
         for (let index = 0; index < val; index++) {
-          prints += "Characteristic " + (index) + ":" + e.target[index+1].value + ", "
+          prints += "["
+          for (let index2 = 0; index2 < e.target[index+1].value; index2++) {
+            prints += "Characteristic " + (index2) + ":" + e.target[index+1].value
+          }
+          prints += "]"
         }
     }
 
