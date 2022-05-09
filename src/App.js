@@ -41,6 +41,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        Collaboration Summary: David and I both worked on the design for the assignment. <br></br>David focused on output of the Characteristics and Javi focused on passsing the props to output the inputs for each of the charactersitcs. 
+        <br></br>
         Choose Characteristic:
         <form onSubmit={this.changeNumber}>
         <input name="testing" type="text" defaultValue={this.state.number}></input>
